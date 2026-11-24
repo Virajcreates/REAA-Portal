@@ -126,3 +126,11 @@ Opens locally at `http://127.0.0.1:8788` backed by local D1 and KV simulators.
 
 ### Production Deploy (Zero Card)
 See [`docs/PORTAL_DEPLOY_GUIDE.md`](docs/PORTAL_DEPLOY_GUIDE.md) for creating D1 (`krera-auth`), KV (`API_KV`), applying `auth_schema.sql` remotely, and running `npm run deploy`.
+
+---
+
+## License & Disclaimer
+
+Source code in this repository is licensed under the **[MIT License](LICENSE)**.
+
+*Disclaimer: This is an independent project and is not affiliated with, endorsed by, or officially connected to the Karnataka Real Estate Regulatory Authority (K-RERA). All underlying project metadata is sourced from public statutory disclosures on `rera.karnataka.gov.in` and provided "as-is" for informational purposes only — not legal or title verification advice.*
