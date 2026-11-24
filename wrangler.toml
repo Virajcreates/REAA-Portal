@@ -1,0 +1,28 @@
+name = "reaa-portal"
+main = "worker/src/index.ts"
+compatibility_date = "2025-02-14"
+
+[assets]
+directory = "./web/dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[vars]
+UPSTREAM_API_URL = "https://krera-metadata-api.krera-metadata-api.workers.dev"
+ADMIN_BOOTSTRAP_EMAIL = ""
+DEFAULT_RATE_LIMIT_PER_MIN = "60"
+DEFAULT_DAILY_QUOTA = "500"
+MAX_KEYS_PER_USER = "3"
+
+[[services]]
+binding = "KRERA_API"
+service = "krera-metadata-api"
+
+[[d1_databases]]
+binding = "AUTH_DB"
+database_name = "krera-auth"
+database_id = "0a8ba2e7-36ab-4e47-a8ca-6b80d6e276fe"
+
+[[kv_namespaces]]
+binding = "API_KV"
+id = "bd11504cc06d4e6994d0e2f5797f5e50"
